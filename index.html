@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro com HTML5 e CSS3</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Âncoras invisíveis: o CSS usa :target nelas para trocar de formulário -->
+        <a class="ancora" id="paracadastro"></a>
+        <a class="ancora" id="paralogin"></a>
+
+        <div class="content">
+
+            <!-- ========== FORMULÁRIO DE LOGIN ========== -->
+            <div id="login" class="painel">
+                <form name="formlogin" id="formlogin" novalidate>
+                    <h1>Login</h1>
+
+                    <p>
+                        <label for="email_login">Seu e-mail</label>
+                        <input id="email_login" name="email_login" type="email"
+                               placeholder="ex.: voce@email.com" autocomplete="email">
+                    </p>
+
+                    <p>
+                        <label for="senha_login">Sua senha</label>
+                        <span class="campo-senha">
+                            <input id="senha_login" name="senha_login" type="password"
+                                   placeholder="Digite sua senha" autocomplete="current-password">
+                            <button type="button" class="mostrar-senha" data-alvo="senha_login"
+                                    aria-label="Mostrar senha">👁️</button>
+                        </span>
+                    </p>
+
+                    <p class="manter">
+                        <input type="checkbox" name="manterlogado" id="manterlogado">
+                        <label for="manterlogado">Manter-me logado</label>
+                    </p>
+
+                    <p class="mensagem" id="msg_login" role="alert"></p>
+
+                    <p>
+                        <input type="submit" value="Entrar">
+                    </p>
+
+                    <p class="link">
+                        Ainda não tem conta?
+                        <a href="#paracadastro">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- ========== FORMULÁRIO DE CADASTRO ========== -->
+            <div id="cadastro" class="painel">
+                <form name="formcadastro" id="formcadastro" novalidate>
+                    <h1>Cadastro</h1>
+
+                    <p>
+                        <label for="nome_cad">Seu nome</label>
+                        <input id="nome_cad" name="nome_cad" type="text"
+                               placeholder="Nome completo" autocomplete="name">
+                    </p>
+
+                    <p>
+                        <label for="email_cad">Seu e-mail</label>
+                        <input id="email_cad" name="email_cad" type="email"
+                               placeholder="ex.: voce@email.com" autocomplete="email">
+                    </p>
+
+                    <p>
+                        <label for="senha_cad">Sua senha</label>
+                        <span class="campo-senha">
+                            <input id="senha_cad" name="senha_cad" type="password"
+                                   placeholder="Mínimo de 6 caracteres" autocomplete="new-password">
+                            <button type="button" class="mostrar-senha" data-alvo="senha_cad"
+                                    aria-label="Mostrar senha">👁️</button>
+                        </span>
+                    </p>
+
+                    <p>
+                        <label for="confirma_cad">Confirme a senha</label>
+                        <input id="confirma_cad" name="confirma_cad" type="password"
+                               placeholder="Repita a senha" autocomplete="new-password">
+                    </p>
+
+                    <p class="mensagem" id="msg_cadastro" role="alert"></p>
+
+                    <p>
+                        <input type="submit" value="Cadastrar">
+                    </p>
+
+                    <p class="link">
+                        Já tem conta?
+                        <a href="#paralogin">Ir para o login</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
