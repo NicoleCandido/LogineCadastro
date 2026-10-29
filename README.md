@@ -1,4 +1,4 @@
-<h1 align="center">🔐 Login e Cadastro</h1>
+<h1 align="center">Login e Cadastro</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-8a2be2?style=for-the-badge&logo=html5&logoColor=white" />
@@ -18,19 +18,19 @@
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- 🔄 Troca entre **Login** e **Cadastro** com animação, sem recarregar a página
-- ✅ Validação dos campos com mensagens claras:
+- Troca entre **Login** e **Cadastro** com animação, sem recarregar a página
+- Validação dos campos com mensagens claras:
   - campos vazios
   - formato de e-mail
   - senha com no mínimo 6 caracteres
   - confirmação de senha
-- 👁️ Botão para **mostrar/esconder a senha**
-- 🎯 Destaque no campo com erro e cursor posicionado nele
-- 📱 Layout **responsivo**
+- Botão para **mostrar/esconder a senha**
+- Destaque no campo com erro e cursor posicionado nele
+- Layout **responsivo**
 
-## 🪄 Como a troca de formulário funciona (só com CSS)
+## Como a troca de formulário funciona (só com CSS)
 
 A página tem duas âncoras invisíveis: `#paracadastro` e `#paralogin`. Quando um link aponta para uma delas, ela vira o **alvo** (`:target`) da página, e o CSS usa isso para decidir qual formulário mostrar:
 
@@ -48,7 +48,7 @@ A página tem duas âncoras invisíveis: `#paracadastro` e `#paralogin`. Quando 
 
 Nenhuma linha de JavaScript é usada para trocar de tela.
 
-## 📂 Estrutura
+## Estrutura
 
 ```
 LogineCadastro/
@@ -58,22 +58,10 @@ LogineCadastro/
 └── preview.png   # Imagem do README
 ```
 
-## 🧠 O que o projeto pratica
+## O que o projeto pratica
 
 - Formulários HTML com `label`, tipos de `input` e `autocomplete`
 - Pseudo-classe **`:target`** e seletor de irmãos **`~`**
 - Animações com `@keyframes`
 - Seletores como `:not()` e variáveis CSS
 - Validação com JavaScript: eventos `submit`, `preventDefault` e expressão regular para e-mail
-
-## ▶️ Como executar
-
-Não precisa instalar nada: basta abrir o arquivo `index.html` no navegador.
-
-> Este é um projeto de **front-end**: os dados são apenas validados na tela e não são enviados nem salvos em lugar nenhum.
-
----
-
-<p align="center">
-  Feito com 💜 por <a href="https://github.com/NicoleCandido">Nicole Cândido</a>
-</p>
